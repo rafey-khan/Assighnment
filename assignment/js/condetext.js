@@ -4,21 +4,22 @@ function getcode1(){
         
         let a=0,b=2,c=34;
         if(a>b){
-            if(a>c) console.log("A is greter");
+            if(a>c){ var res = "A is Greater"; console.log(res);}
             else{
-                console.log("C is greater");
+                var res = "C is Greater";
+                console.log(res);
             }
         }else{
-            if(b>c) console.log("B is greater");
+            if(b>c){ var res = "B is Greater"; console.log(res);}
             else{
-                console.log("C is greater");
+                var res = "C is Greater";
+                console.log(res);
             }
         }
 
         ##### To Check which is greter using ? operator #####
-
-        let a=0,b=5,c=28;
-        (a>b) ? (a>c) ? console.log("A is greater!"); : console.log("C is greater"); : (b>c) ? console.log("B is greater"); : console.log("C is greater");
+        let a=0,b=45,c = 9;
+        var res = (a>b)?(a>c)? "A is Greater" : "C is Greater" : (b>c)? "B is Greater" : "C is Greater";
     `;
 }
 function switchcode(){
@@ -28,13 +29,13 @@ function switchcode(){
         let a=0,b=3,c=9;
         switch(+(a>b)){  //  +(a>b) => +(true) => 1
             case 1: switch(+(a>c)){
-                case 1: console.log("A is greater"); break;
-                case 0: console.log("C is greater");
+                case 1: var res = "A is greater"; console.log(res); break;
+                case 0: var res = "C is greater"; console.log(res);
             }
             break;
             case 0: switch(+(b>c)){
-                case 1: console.log("B is greater");
-                case 0: console.log("C is greater");
+                case 1: var res = "B is greater"; console.log(res);
+                case 0: var res = "C is greater"; console.log(res);
             }
         }
     `;
